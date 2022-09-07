@@ -86,7 +86,7 @@ b, strong {
   color: #BF360C;
 }
 .custom-btn.custom-btn-bg {
-  background: #474559;
+  background: #BF360C;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
@@ -120,7 +120,7 @@ b, strong {
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 8s linear infinite 0s;
+  animation: BottomTotop 10s linear infinite 0s;
 }
 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
@@ -131,7 +131,9 @@ b, strong {
 .animated-item:nth-child(4n+4) {
   animation-delay: 6s;
 }
-
+.animated-item:nth-child(5n+5) {
+  animation-delay: 8s;
+}
 
 @keyframes BottomTotop {
   0% {
@@ -322,7 +324,7 @@ b, strong {
 }
 .timeline-wrapper:before {
   content: "";
-  background: #474559;
+  background: #BF360C;
   width: 3px;
   height: 100%;
   position: absolute;
@@ -330,7 +332,7 @@ b, strong {
 }
 
 .timeline-yr {
-  background: #474559;
+  background: #BF360C;
   border-radius: 100%;
   position: absolute;
   width: 75px;
@@ -353,7 +355,7 @@ b, strong {
   margin-left: 6em;
 }
 .timeline-info small {
-  color: #474559;
+  color: #BF360C;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
@@ -437,11 +439,11 @@ b, strong {
   transition: all 0.4s ease;
 }
 .contact-form .submit-btn:hover {
-  background: #474559;
+  background: #BF360C;
 }
 
 .contact-info {
-  background: #474559;
+  background: #BF360C;
   border-radius: 0 0 3px 3px;
   position: relative;
   bottom: 8px;

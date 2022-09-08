@@ -45,7 +45,7 @@ $('#form-email').on('submit', function (e) {
   fetch('https://api.mailgun.net/v3/sandbox9fb84166311346cd9665bc697f580154.mailgun.org/messages', {
     method: 'POST',
     headers: {
-      'Authorization': 'Basic ' + btoa('api:a427036291601af5cbc2de1f1fe1f619-07a637b8-131e2b18')
+      'Authorization': 'Basic ' + btoa('api:')
     },
     body: form
   })

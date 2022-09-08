@@ -85,7 +85,7 @@
               this is me.</p>
 
             <div class="custom-btn-group mt-4">
-              <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+              <a download href="files/resume Diogo Baltazar do Nascimento.pdf" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
               <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
             </div>
           </div>
@@ -305,22 +305,22 @@
           <div class="contact-form">
             <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-            <form action="" method="get">
+            <form action="" method="post" id="form-email">
               <div class="row">
                 <div class="col-lg-6 col-12">
-                  <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required>
                 </div>
 
                 <div class="col-lg-6 col-12">
-                  <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                  <input type="email" class="form-control" name="email" placeholder="Email" id="email" required>
                 </div>
 
                 <div class="col-12">
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
                 </div>
 
                 <div class="ml-lg-auto col-lg-5 col-12">
-                  <input type="submit" class="form-control submit-btn" value="Send Button">
+                  <input type="submit" class="form-control submit-btn" value="Send email">
                 </div>
               </div>
             </form>
@@ -354,9 +354,7 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/smoothscroll.js"></script>
   <script src="js/custom.js"></script><script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-
-
-
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

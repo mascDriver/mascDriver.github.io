@@ -449,9 +449,12 @@ b, strong {
   bottom: 8px;
 }
 .contact-info p, .contact-info a {
+  font-size: 16px;
   color: #f7f3f3;
 }
-
+.contact-info p:hover, .contact-info a:hover {
+  color: #f7f3f3 !important;
+}
 .social-links .uil {
   color: #f7f3f3;
   font-size: 20px;

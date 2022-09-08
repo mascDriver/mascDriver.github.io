@@ -42,15 +42,17 @@ $('#form-email').on('submit', function (e) {
   form.append('subject', `Novo contato de interesse de ${this.name.value}.`);
   form.append('text', this.message.value);
 
-  fetch('https://api.mailgun.net/v3/sandbox9fb84166311346cd9665bc697f580154.mailgun.org/messages', {
+  fetch('https://api.sendgrid.com/v3/mail/send', {
     method: 'POST',
     headers: {
-      'Authorization': 'Basic ' + btoa('api:')
+      'Authorization': 'Bearer SG.n-oxGOvxTLeD2yTER'+'FRUUQ.f3rSlZnW92Eu7rO'+'C30mTwgcRtYAjEr5pyboPYdXeBEI',
+      'Content-Type': 'application/json'
     },
-    body: form
+    body: JSON.stringify({"personalizations": [{"to": [{"email": "diogoblibi@hotmail.com"}]}],"from": {"email": "diogobaltazardonascimento@outlook.com"},"subject": "Sending with SendGrid is Fun","content": [{"type": "text/plain", "value": "and easy to do anywhere, even with cURL"}]})
   })
-    .then(response => response.json())
+    .then(response => response)
     .then(response => {
+      console.log(response)
       $('#form-email').each(function () {
         this.reset();
       });

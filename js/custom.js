@@ -36,21 +36,13 @@
 })(jQuery);
 $('#form-email').on('submit', function (e) {
   e.preventDefault()
-  const form = new FormData();
-  form.append('from', this.email.value);
-  form.append('to', 'diogoblibi@hotmail.com');
-  form.append('subject', `Novo contato de interesse de ${this.name.value}.`);
-  form.append('text', this.message.value);
-
-  fetch('https://api.sendgrid.com/v3/mail/send', {
-    method: 'POST',
-    headers: {
-      'Authorization': 'Bearer SG.n-oxGOvxTLeD2yTER'+'FRUUQ.f3rSlZnW92Eu7rO'+'C30mTwgcRtYAjEr5pyboPYdXeBEI',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({"personalizations": [{"to": [{"email": "diogoblibi@hotmail.com"}]}],"from": {"email": "diogobaltazardonascimento@outlook.com"},"subject": "Sending with SendGrid is Fun","content": [{"type": "text/plain", "value": "and easy to do anywhere, even with cURL"}]})
-  })
-    .then(response => response)
+  Email.send({
+    SecureToken : "4579b334-cd7d-441b-88ce-2732d8ec61cc",
+    To : 'diogobaltazardonascimento@outlook.com',
+    From : this.email.value,
+    Subject : `${this.name.value} deseja conversar com você.`,
+    Body : this.message.value,
+    })
     .then(response => {
       console.log(response)
       $('#form-email').each(function () {

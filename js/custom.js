@@ -37,11 +37,11 @@
 $('#form-email').on('submit', function (e) {
   e.preventDefault()
   Email.send({
-    SecureToken : "4579b334-cd7d-441b-88ce-2732d8ec61cc",
-    To : 'diogobaltazardonascimento@outlook.com',
-    From : this.email.value,
+    SecureToken : "39a25dfe-87f6-421d-b378-5cdff3686249",
+    To : 'diogoblibi@hotmail.com',
+    From : 'diogobaltazardonascimento@outlook.com',
     Subject : `${this.name.value} deseja conversar com você.`,
-    Body : this.message.value,
+    Body : `${this.message.value} \n email: ${this.email.value}`,
     })
     .then(response => {
       console.log(response)

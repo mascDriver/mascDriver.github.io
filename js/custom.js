@@ -36,13 +36,18 @@
 })(jQuery);
 $('#form-email').on('submit', function (e) {
   e.preventDefault()
+  const button = $("#send-email-button")
+  let old_text_button = button.val()
+  button.val('Sending your email...')
+  button.prop("disabled", true);
+  button.css('background-color', 'grey')
   Email.send({
-    SecureToken : "39a25dfe-87f6-421d-b378-5cdff3686249",
-    To : 'diogoblibi@hotmail.com',
-    From : 'diogobaltazardonascimento@outlook.com',
-    Subject : `${this.name.value} deseja conversar com você.`,
-    Body : `${this.message.value} \n email: ${this.email.value}`,
-    })
+    SecureToken: "39a25dfe-87f6-421d-b378-5cdff3686249",
+    To: 'diogoblibi@hotmail.com',
+    From: 'diogobaltazardonascimento@outlook.com',
+    Subject: `${this.name.value} deseja conversar com você.`,
+    Body: `${this.message.value} \n email: ${this.email.value}`,
+  })
     .then(response => {
       console.log(response)
       $('#form-email').each(function () {
@@ -53,5 +58,8 @@ $('#form-email').on('submit', function (e) {
         title: 'Email successfully sent.',
         text: "I'll answer as soon as possible",
       })
+      button.val(old_text_button)
+      button.prop("disabled", false);
+      button.css('background-color', '#BF360C')
     })
 })

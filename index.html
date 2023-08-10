@@ -17,6 +17,7 @@
   <link type="image/png" sizes="32x32" rel="icon" href="images/icons/icons8-developers-32.png">
   <link type="image/png" sizes="96x96" rel="icon" href="images/icons/icons8-developers-96.png">
   <!-- MAIN STYLE -->
+  <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/tooplate-style.css">
 </head>
 
@@ -70,22 +71,23 @@
         <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
           <div class="about-text">
             <h1 class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
-            <h2 class="animated animated-text">
-              <span class="mr-2">Hey folks, I'm</span>
-              <div class="animated-info">
-                <span class="animated-item">Diogo Baltazar</span>
-                <span class="animated-item">Data Engineer</span>
-                <span class="animated-item">FullStack</span>
-                <span class="animated-item">Pwa Specialist</span>
-                <span class="animated-item">Data Scientist</span>
-              </div>
+              <h2 class="animated animated-text">
+                <span class="mr-2">Hey folks, I'm</span>
+                <div class="animated-info">
+                  <span class="animated-item">Diogo Baltazar</span>
+                  <span class="animated-item">Data Engineer</span>
+                  <span class="animated-item">FullStack</span>
+                  <span class="animated-item">Pwa Specialist</span>
+                  <span class="animated-item">Data Scientist</span>
+                </div>
             </h1>
 
             <p>Passionate about solving challenges, enthusiastic about data science and curious about new technologies,
               this is me.</p>
 
             <div class="custom-btn-group mt-4">
-              <a download href="files/resume Diogo Baltazar do Nascimento.pdf" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+              <a download href="files/resume Diogo Baltazar do Nascimento.pdf" class="btn mr-lg-2 custom-btn"><i
+                  class='uil uil-file-alt'></i> Download Resume</a>
               <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
             </div>
           </div>
@@ -102,7 +104,93 @@
   </section>
 
   <!-- PROJECTS -->
-  <section class="project py-5" id="project">
+<section class="hidden-sm hidden-xs">
+  <div class="title-projects">
+    <h2>Projects developed by me.</h2>
+    <h3><small style="color: #BF360C">Click on image to see the project in live</small></h3>
+      <br>
+  </div>
+  <div class="container-cards">
+    <div class="card">
+      <h3 class="title">masc-hour-bank</h3>
+      <h6 class="sub-title">System to record work arrival and departure and show when the user needs it.</h6>
+        <div class="github-button">
+          <a class="github-button" href="https://github.com/mascDriver/masc-hour-bank" data-icon="octicon-star"
+            data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+        </div>
+        <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+
+        </div>
+        <a class="circle" href="https://hourbank.mascdriver.com.br/day" target="_blank">
+          <img src="images/project/project-image02.png" class="img-fluid" alt="Mini erp">
+        </a>
+    </div>
+    <div class="card">
+      <h3 class="title">controle-estoque-django</h3>
+      <h6 class="sub-title">Site criado para trabalho universitario.</h6>
+      <div class="github-button">
+        <a class="github-button" href="https://github.com/mascDriver/controle-estoque-django" data-icon="octicon-star"
+          data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+      </div>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <a class="circle" href="https://web-loja-lunkes.herokuapp.com/" target="_blank">
+        <img src="images/project/project-image01.png" class="img-fluid" alt="Mini erp">
+      </a>
+    </div>
+    <div class="card">
+      <h3 class="title">apiRuUffs</h3>
+      <h6 class="sub-title">Webscrapping returns menu of R.U UFFS.</h6>
+        <div class="github-button">
+          <a class="github-button" href="https://github.com/mascDriver/apiRuUffs" data-icon="octicon-star"
+            data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+        </div>
+        <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+        <a class="circle" href="https://api-ru-uffs.herokuapp.com/docs" target="_blank">
+          <img src="images/project/project-image03.png" class="img-fluid" alt="Mini erp">
+        </a>
+    </div>
+    <div class="card">
+      <h3 class="title">masc-hour-bank_api</h3>
+      <h6 class="sub-title">Rest api of attendance hours to save and show data.</h6>
+        <div class="github-button">
+          <a class="github-button" href="https://github.com/mascDriver/masc-hour-bank_api" data-icon="octicon-star"
+            data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+        </div>
+        <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+        <a class="circle" href="https://hour-bank-api.mascdriver.com.br/#tag/api" target="_blank">
+          <img src="images/project/project-image04.png" class="img-fluid" alt="Mini erp">
+
+        </a>
+    </div>
+    <div class="card">
+      <h3 class="title">ruuffs_bot</h3>
+      <h6 class="sub-title">Telegram bot create for made available the menu with few commands.</h6>
+        <div class="github-button">
+          <a class="github-button" href="https://github.com/mascDriver/ruuffs_bot" data-icon="octicon-star"
+            data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+        </div>
+        <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+        <a class="circle" href="https://t.me/ruuffs_bot" target="_blank">
+          <img src="images/project/project-image05.png" class="img-fluid" alt="Mini erp">
+        </a>
+    </div>
+  </div>
+</section>
+  <section class="project py-5 hidden-lg hidden-md" id="project">
     <div class="container">
 
       <div class="row">
@@ -111,82 +199,64 @@
           <div class="col-lg-8 mx-auto">
             <h2>Projects developed by me.</h2>
             <h3><small style="color: #BF360C">Click on image to see the project in live</small></h4>
-            <br>
+              <br>
           </div>
 
           <div class="owl-carousel owl-theme">
             <div class="item">
               <div class="project-info">
-                  <a class="github-button"
-                  href="https://github.com/mascDriver/masc-hour-bank"
-                  data-icon="octicon-star"
-                  data-size="large"
-                  data-show-count="true"
-                  aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                  <h4>System to record work arrival and departure and show when the user needs it.</h4>
-                  <a href="https://hourbank.mascdriver.com.br/day" target="_blank">
-                    <img src="images/project/project-image02.png" class="img-fluid" alt="Mini erp">
-                  </a>
+                <a class="github-button" href="https://github.com/mascDriver/masc-hour-bank" data-icon="octicon-star"
+                  data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+                <h4>System to record work arrival and departure and show when the user needs it.</h4>
+                <a href="https://hourbank.mascdriver.com.br/day" target="_blank">
+                  <img src="images/project/project-image02.png" class="img-fluid" alt="Mini erp">
+                </a>
               </div>
             </div>
 
             <div class="item">
               <div class="project-info">
-                  <a class="github-button"
-                  href="https://github.com/mascDriver/controle-estoque-django"
-                  data-icon="octicon-star"
-                  data-size="large"
-                  data-show-count="true"
+                <a class="github-button" href="https://github.com/mascDriver/controle-estoque-django"
+                  data-icon="octicon-star" data-size="large" data-show-count="true"
                   aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                  <h4>Basic inventory control.</h4>
-                  <a href="https://web-loja-lunkes.herokuapp.com/" target="_blank">
-                    <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
-                  </a>
+                <h4>Basic inventory control.</h4>
+                <a href="https://web-loja-lunkes.herokuapp.com/" target="_blank">
+                  <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                </a>
               </div>
             </div>
 
             <div class="item">
               <div class="project-info">
-                  <a class="github-button"
-                  href="https://github.com/mascDriver/apiRuUffs"
-                  data-icon="octicon-star"
-                  data-size="large"
-                  data-show-count="true"
-                  aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                  <h4>Web Scraping on the university restaurant menu and available with rest api.</h4>
-                  <a href="https://api-ru-uffs.herokuapp.com/docs" target="_blank">
-                    <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
-                  </a>
+                <a class="github-button" href="https://github.com/mascDriver/apiRuUffs" data-icon="octicon-star"
+                  data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+                <h4>Web Scraping on the university restaurant menu and available with rest api.</h4>
+                <a href="https://api-ru-uffs.herokuapp.com/docs" target="_blank">
+                  <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
+                </a>
               </div>
             </div>
 
             <div class="item">
               <div class="project-info">
-                  <a class="github-button"
-                  href="https://github.com/mascDriver/masc-hour-bank_api"
-                  data-icon="octicon-star"
-                  data-size="large"
-                  data-show-count="true"
+                <a class="github-button" href="https://github.com/mascDriver/masc-hour-bank_api"
+                  data-icon="octicon-star" data-size="large" data-show-count="true"
                   aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                  <h4>Rest api of attendance hours to save and show data.</h4>
-                  <a href="https://hour-bank-api.mascdriver.com.br/#tag/api" target="_blank">
-                    <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
-                  </a>
+                <h4>Rest api of attendance hours to save and show data.</h4>
+                <a href="https://hour-bank-api.mascdriver.com.br/#tag/api" target="_blank">
+                  <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
+                </a>
               </div>
             </div>
 
             <div class="item">
               <div class="project-info">
-                <a class="github-button"
-                href="https://github.com/mascDriver/ruuffs_bot"
-                data-icon="octicon-star"
-                data-size="large"
-                data-show-count="true"
-                aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+                <a class="github-button" href="https://github.com/mascDriver/ruuffs_bot" data-icon="octicon-star"
+                  data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
                 <h4>Telegram bot create for made available the menu with few commands.</h4>
-                  <a href="https://t.me/ruuffs_bot" target="_blank">
-                    <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
-                  </a>
+                <a href="https://t.me/ruuffs_bot" target="_blank">
+                  <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                </a>
               </div>
             </div>
 
@@ -246,7 +316,7 @@
         </div>
 
         <div class="col-lg-6 col-12">
-          <h2 class="mb-4 mobile-mt-2">Educations</h2>
+          <h2 class="mb-4 mobile-mt-2">Education</h2>
 
           <div class="timeline">
             <div class="timeline-wrapper">
@@ -256,9 +326,7 @@
               <div class="timeline-info">
                 <h3><span>English exchange</span><small>EC Vancouver</small></h3>
                 <p>
-                  <a rel="nofollow"
-                    href="https://mascdriver.com.br/images/certifications/diogo.png"
-                    target="_blank">
+                  <a rel="nofollow" href="https://mascdriver.com.br/images/certifications/diogo.png" target="_blank">
                     Link to see certificate.
                   </a>
                 </p>
@@ -335,14 +403,14 @@
 
             <ul class="social-links">
               <li><a href="https://www.linkedin.com/in/diogo-baltazar-do-nascimento/" target="_blank">
-                <span class="iconify" data-icon="uil:linkedin" data-width="25"></span>
-              </a></li>
+                  <span class="iconify" data-icon="uil:linkedin" data-width="25"></span>
+                </a></li>
               <li><a href="https://github.com/mascDriver" target="_blank">
-                <span class="iconify" data-icon="uil:github" data-width="25"></span></a></li>
+                  <span class="iconify" data-icon="uil:github" data-width="25"></span></a></li>
               <li><a href="https://instagram.com/mascDriver" target="_blank">
-                <span class="iconify" data-icon="uil:instagram" data-width="25"></span></a></li>
+                  <span class="iconify" data-icon="uil:instagram" data-width="25"></span></a></li>
               <li><a href="https://twitch.tv/mascDriver" target="_blank">
-                <span class="iconify" data-icon="akar-icons:twitch-fill" data-width="25"></span></a></li>
+                  <span class="iconify" data-icon="akar-icons:twitch-fill" data-width="25"></span></a></li>
             </ul>
           </div>
         </div>
@@ -362,7 +430,8 @@
                 </div>
 
                 <div class="col-12">
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"
+                    required></textarea>
                 </div>
 
                 <div class="ml-lg-auto col-lg-5 col-12">

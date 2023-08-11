@@ -117,7 +117,7 @@ b, strong {
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  top: 0;
+  top: -5px;
   right: 0;
   left: 0;
   animation: BottomTotop 10s linear infinite 0s;

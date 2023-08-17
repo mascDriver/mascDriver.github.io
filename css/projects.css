@@ -47,9 +47,11 @@
     color: #f7f3f3;
     font-weight: 300;
     text-align: center;
+    
   }
   
   .bar {
+    display: none;
     position: absolute;
     top: 125px;
     left: 20px;
@@ -107,4 +109,10 @@
 
 .title-projects{
     text-align: center;
+}
+.badges-stacks{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5px;
+  align-items: center;
 }

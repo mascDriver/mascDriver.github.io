@@ -117,22 +117,11 @@ b, strong {
   opacity: 0;
   overflow: hidden;
   position: absolute;
+  width: 500px;
   top: -5px;
   right: 0;
   left: 0;
-  animation: BottomTotop 10s linear infinite 0s;
-}
-.animated-item:nth-child(2n+2) {
-  animation-delay: 2s;
-}
-.animated-item:nth-child(3n+3) {
-  animation-delay: 4s;
-}
-.animated-item:nth-child(4n+4) {
-  animation-delay: 6s;
-}
-.animated-item:nth-child(5n+5) {
-  animation-delay: 8s;
+  animation: BottomTotop 12s linear infinite 0s;
 }
 
 @keyframes BottomTotop {

@@ -33,6 +33,19 @@
   // TOOLTIP
   $('.social-links a').tooltip();
 
+  // ANIMATED-ITEM DYNAMIC ANIMATION
+  function setAnimatedItemTiming() {
+    var items = document.querySelectorAll('.animated-item');
+    var count = items.length;
+    if (count === 0) return;
+    var duration = count * 1.5;
+    items.forEach(function(item, idx) {
+      item.style.animationDuration = duration + 's';
+      item.style.animationDelay = (idx * duration / count) + 's';
+    });
+  }
+  setAnimatedItemTiming();
+
 })(jQuery);
 $('#form-email').on('submit', function (e) {
   e.preventDefault()
